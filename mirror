@@ -1,0 +1,12 @@
+#!/bin/bash
+
+BASE=https://dl.bintray.com/lovell/sharp/
+
+PKGS=`curl -#L $BASE | grep -o '>libvips.*.tar.gz<' | grep -o '[^<>]*'`
+
+mkdir -p dist
+for pkg in $PKGS ; do
+   url=$BASE/$pkg
+   echo $url
+   curl -#L $url > dist/$pkg
+done
