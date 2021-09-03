@@ -1,5 +1,9 @@
 {
   "name": "libvips",
   "version": "0.0.1",
-  "description": "Mirror of lovell/sharp libvips binaries"
+  "description": "Mirror of lovell/sharp libvips binaries",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pi0/libvips.git"
+  }
 }
